@@ -101,7 +101,31 @@
 .trending{
     grid-column: 3/4;
     grid-row: 3/4;
+    padding-right: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: grid;
+    gap: 1rem;
 }
+.trending  .box{
+    background-color: white;
+    border-radius: 15px;
+    align-content: stretch;
+    align-items: stretch;
+    box-shadow: 2px 2px #ede9fe;
+    display:grid;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.trending .box .section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 1rem;
+    border-radius: 15px;
+}
+
 .announcement{
     grid-column: 3/4;
     grid-row: 1/3;
@@ -121,6 +145,7 @@
     display: grid;
     align-content: stretch;
     align-items: stretch;
+    box-shadow: 2px 2px #ede9fe;
 }
 .announcement .box [class^="section"]{
     padding-left: 1rem;
@@ -129,6 +154,7 @@
     border-radius: 15px;
     border-bottom: 1px solid #a78bfa;
 }
+
 
 .trending h3 , .announcement h3, .projects h3{
     justify-self: start;
