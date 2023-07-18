@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./s_files/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+            <div class="section"></div>
+        </div>
+        <div class="sidebar">
+            <div class="section1">
+                <h1>Dashboard</h1> 
+            </div>
+            <div class="section2">
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Home</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Profile</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Messages</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>History</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Tasks</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Communities</h2>
+                </div>
+            </div>
+            <div class="section25">
+                
+            </div>
+            <div class="section3">
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Setting</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Support</h2>
+                </div>
+                <div class="subsection">
+                    <img src="http://127.0.0.1:5500/" alt="">
+                    <h2>Privacy</h2>
+                </div>
+            </div>
+
+        </div>
+        <div class="info">
+            <div class="projects">
+                <h3 class="title"> Your Projects</h3>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="announcement">
+                <h3 class="title">Announcement</h3>
+                <div class="box">
+                    <div class="section"></div>
+                    <div class="section"></div>
+                    <div class="section"></div>
+                </div>
+            </div>
+            <div class="trending">
+                <h3 class="title">Trending</h3>
+                <div class="box">
+                    <div class="section"></div>
+                    <div class="section"></div>
+                    <div class="section"></div>
+                    <div class="section"></div>                
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
