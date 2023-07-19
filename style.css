@@ -81,7 +81,13 @@ body {
     grid-area: title;
     align-items: start;
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: auto 1fr;
 
+}
+#dashboard{
+    height: 2rem;
+    color: white;
 }
 .sidebar .section2{
     grid-area: principal;
@@ -90,9 +96,7 @@ body {
     justify-content: space-between;
 }
 
-#user{
-    height: 2rem;
-}
+
 
 .sidebar .section25{
     grid-area: espacio;
@@ -162,6 +166,12 @@ body {
     align-items: center;
     justify-items: stretch;
 }
+#user{
+    height: 2rem;
+}
+#notification{
+    height: 1.5rem;
+}
 .nav .lower .section3{
     padding-bottom: 1.2rem;
     display: grid;
@@ -224,6 +234,7 @@ button{
     grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     padding-top: 0;
     padding-bottom: 0;
+    
     margin-bottom: 1rem;
     gap: 20px;
     overflow: auto;
@@ -234,6 +245,7 @@ button{
     display: grid;
     padding-top: 2.5rem;
     padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 1rem;
     grid-template-rows: 1fr 1fr;
     border-left: 10px solid #a78bfa;
