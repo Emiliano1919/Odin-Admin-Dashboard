@@ -50,6 +50,11 @@ table {
     margin: 0px;
     padding: 0px;
 }
+
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
 .container{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -68,7 +73,7 @@ table {
     display: grid;
     justify-content: start;
     padding: 10%;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(4,1fr);
     grid-template-areas: "title" "principal" "espacio" "extra";
 }
@@ -80,6 +85,13 @@ table {
 }
 .sidebar .section2{
     grid-area: principal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#user{
+    height: 2rem;
 }
 
 .sidebar .section25{
@@ -119,10 +131,16 @@ table {
 .nav .upper .section1{
     grid-column: 1/2;
     display: grid;
+    grid-template-columns: auto 1fr;
     padding-left:2rem;
     padding-right: 1.5rem;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
+    align-items: center;
+    column-gap: 10px;
+}
+#magnify{
+    height: 1.2rem;
 }
 #searchbar{
     border-radius: 30px;
@@ -140,9 +158,23 @@ table {
     padding-right: 1.5rem;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
+    grid-template-columns: 1fr 1fr 2fr;
+    align-items: center;
+    justify-items: stretch;
 }
 .nav .lower .section3{
-    
+    padding-bottom: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+#userLow{
+    height: 3rem;
+    grid-column: 1/2;
+}
+#name{
+    grid-column: 2/3;
 }
 .nav .lower .section4{
     display: flex;
@@ -170,14 +202,14 @@ button{
     height: 100%;
 }
 .projects{
-    grid-column: 1/ 2;
+    grid-column: 2/ 3;
     grid-row: 1/-1;
     display: grid;
     grid-column: auto;
     grid-template-rows: 1fr 9fr;
     height: 100%;
     margin-left: 1rem;
-    
+    width: 100;
     
 }
 .projects > .title{ 
@@ -189,11 +221,12 @@ button{
 .boxes{
     grid-row:2/ -1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 1rem;
     gap: 20px;
+    overflow: auto;
 }
 .boxes > .box {
     background-color: white;
@@ -243,6 +276,7 @@ button{
     padding-top: 1.2rem;
     gap: 1.5rem;
     justify-content: start;
+    padding-bottom: 0.5rem;
 }
 .announcement .h3{
 
@@ -254,6 +288,7 @@ button{
     align-content: stretch;
     align-items: stretch;
     box-shadow: 2px 2px #ede9fe;
+    min-width: fit-content;
 }
 .announcement .box [class^="section"]{
     padding-left: 1rem;
