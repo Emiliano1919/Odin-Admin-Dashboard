@@ -276,9 +276,20 @@ button{
 .trending .box .section{
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 0.2rem;
+    padding-top: 0.5rem;
     padding-bottom: 1rem;
     border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
+}
+.tweet{
+    grid-column: 2/3;
+}
+
+#cowboy{
+    height: 1rem;
 }
 
 .announcement{
